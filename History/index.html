@@ -71,48 +71,34 @@
     <main>
 
         <head>
-            <title>About | misspy - High-performance Misskey API framework</title>
+            <title>History | misspy - High-performance Misskey API framework</title>
         </head>
 
         <body>
-            <h1 style="text-align: center;"><i class="fas fa-star"></i> misspy contributors</h1>
-            <div class="card mx-auto" style="width: 18rem;">
-                <img src="https://0.gravatar.com/avatar/7900d17ff772f89424a51eb2e36fb42e6fcd1a7b4b94936a8f708a832c8477b1" class="card-img-top" alt="sonyakun icon (gravatar)">
-                <div class="card-body">
-                    <h5 class="card-title">sonyakun <span class="badge rounded-pill text-bg-primary"><i class="fa-solid fa-crown"></i> Owner</span> <span class="badge rounded-pill text-bg-success">misspy org member</span></h5>
-                    <p class="card-text">I like Python <i class="fa-solid fa-heart"></i></p>
-                </div>
-                <div class="card-body">
-                    <a href="https://github.com/sonyakun" class="card-link"><i class="fa-brands fa-github"></i> GitHub</a>
-                    <a href="https://misskey.io/@sonyakun" class="card-link"><img src="assets/misskey.png" height="35" width="35"></i> misskey (.io)</a>
-                </div>
-            </div>
-            <!-- 
-            <div class="card mx-auto" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="icon">
-                <div class="card-body">
-                    <h5 class="card-title">name</h5>
-                    <p class="card-text">description</p>
-                </div>
-                <div class="card-body">
-                    <a href="https://github.com/:id" class="card-link"><i class="fa-brands fa-github"></i> GitHub</a>
-                    <a href="https://misskey.io/@:id (example, not required misskey.io)" class="card-link"><img src="assets/misskey.png" height="35" width="35"></i> misskey (.io)</a>
-                </div>
-            </div>
-
-            (org member)
-            <div class="card mx-auto" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="icon">
-                <div class="card-body">
-                    <h5 class="card-title">name <span class="badge rounded-pill text-bg-success">misspy org member</span></h5>
-                    <p class="card-text">description</p>
-                </div>
-                <div class="card-body">
-                    <a href="https://github.com/:id" class="card-link"><i class="fa-brands fa-github"></i> GitHub</a>
-                    <a href="https://misskey.io/@:id (example, not required misskey.io)" class="card-link"><img src="assets/misskey.png" height="35" width="35"></i> misskey (.io)</a>
-                </div>
-            </div>
-        -->
+            <h1 style="text-align: center;">History</h1>
+            <br>
+            <h2 id="202310dev1" style="text-align: center;">2023.10.dev1</h2>
+            <ul class="list-group list-group-numbered">
+                <li class="list-group-item">Changed to use aiohttp for http requests that do not send files, improving performance by about 78% (for environments installed with [speedups]).</li>
+                <li class="list-group-item">Changed websocket to use aiohttp websocket.</li>
+                <li class="list-group-item">Fixed bug in 2023.10.dev0 that caused websocket hooks to not be found</li>
+                <li class="list-group-item"><a href="https://misskey-hub.net/docs/api/entity/note.html">Note</a>, <a href="https://misskey-hub.net/docs/api/entity/user.html">User</a>, <a href="#">Drive</a>を実装</li>
+            </ul>
+            <br>
+            <h2 id="202310dev0" style="text-align: center;">2023.10.dev0</h2>
+            <ul class="list-group list-group-numbered">
+                <li class="list-group-item">Destructive changes to the code</li>
+            </ul>
+            <br>
+            <h2 id="20230917" style="text-align: center;">2023.09.17</h2>
+            <ul class="list-group list-group-numbered">
+                <li class="list-group-item">Add httpx Decencies</li>
+            </ul>
+            <br>
+            <h2 id="20230914" style="text-align: center;">2023.09.14</h2>
+            <ul class="list-group list-group-numbered">
+                <li class="list-group-item"><s>Eliminate httpx from dependent libraries (use aiohttp and requests as alternatives)</s></li>
+            </ul>
         </body>
     </main>
 </content>
