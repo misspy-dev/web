@@ -3,6 +3,7 @@
     <head>    
         <!-- template injected by Jinja2-->
         <meta charset="utf-8">
+        <title>404 NotFound | misspy - High-performance Misskey API framework</title>
         <link rel="icon" type="image/png" href="https://misspy.xyz/assets/misskey.png">
         <link rel="apple-touch-icon" href="https://misspy.xyz/assets/misskey.png" sizes="180x180">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,6 +31,30 @@
 
             .tab_center {
                 margin: auto;
+            }
+
+            .notfound_Text {
+                font-size: 150px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin: -150px 0 0 -150px;
+            }
+
+            .notfound_Text_2 {
+                font-size: 50px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin: 10px 0 0 -130px;
+            }
+
+            .notfound_Text_3 {
+                font-size: 20px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin: 80px 0 0 -280px;
             }
         </style>
         <!-- template end-->
@@ -66,62 +91,13 @@
             </div>
         </nav>
         <!-- template end-->
-        
-<content>
-    <main>
-
-        <head>
-            <title>History | misspy - High-performance Misskey API framework</title>
-        </head>
-
-        <body>
-            <h1 style="text-align: center;">History</h1>
-            <br>
-            <h2 id="202310dev1" style="text-align: center;">2023.10.dev1</h2>
-            <ul class="list-group list-group-numbered">
-                <li class="list-group-item">Changed to use aiohttp for http requests that do not send files, improving performance by about 78% (for environments installed with [speedups]).</li>
-                <li class="list-group-item">Changed websocket to use aiohttp websocket.</li>
-                <li class="list-group-item">Fixed bug in 2023.10.dev0 that caused websocket hooks to not be found</li>
-                <li class="list-group-item"><a href="https://misskey-hub.net/docs/api/entity/note.html">Note</a>, <a href="https://misskey-hub.net/docs/api/entity/user.html">User</a>, <a href="#">Drive</a>を実装</li>
-            </ul>
-            <br>
-            <h2 id="202310dev0" style="text-align: center;">2023.10.dev0</h2>
-            <ul class="list-group list-group-numbered">
-                <li class="list-group-item">Destructive changes to the code</li>
-            </ul>
-            <br>
-            <h2 id="20230917" style="text-align: center;">2023.09.17</h2>
-            <ul class="list-group list-group-numbered">
-                <li class="list-group-item">Add httpx Decencies</li>
-            </ul>
-            <br>
-            <h2 id="20230914" style="text-align: center;">2023.09.14</h2>
-            <ul class="list-group list-group-numbered">
-                <li class="list-group-item"><s>Eliminate httpx from dependent libraries (use aiohttp and requests as alternatives)</s></li>
-            </ul>
-        </body>
-    </main>
-</content>
-
-        <!-- template injected by Jinja2-->
-        <div class="container">
-            <footer class="py-3 my-4">
-                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-                    <li class="nav-item"><a href="#Features" class="nav-link px-2 text-body-secondary">Features</a></li>
-                    <li class="nav-item"><a href="https://docs.misspy.xyz" class="nav-link px-2 text-body-secondary">Documents</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
-                </ul>
-                <p class="text-center text-body-secondary">© 2023 misspy development</p>
-                <p class="text-center text-body-secondary"><small><a href="https://github.com/misspy-development/web">website</a> is Built with <a href="https://getbootstrap.com/">bootstrap5</a> and <a href="https://fontawesome.com/">fontawesome</a>.</small></p>
-            </footer>
+        <div>
+            <span style="color: #0d6efd;"><h1 class="notfound_Text">404</h1></span>
+            <h2 class="notfound_Text_2">Not Found</h2>
+            <h4 class="notfound_Text_3">sorry, The page you are looking for doesn't seem to be here... :(</h4>
         </div>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.3.4/lib/darkmode-js.min.js"></script>
         <script src="js/darkmode-js/darkmode-js-function.js"></script>
-        <!-- template end-->
     </body>
 </html>
